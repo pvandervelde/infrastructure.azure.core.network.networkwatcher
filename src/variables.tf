@@ -26,11 +26,13 @@ variable "location" {
 #
 
 variable "meta_source" {
-
+    description = "The commit ID of the current commit from which the plan is being created."
+    type = string
 }
 
 variable "meta_version" {
-
+    description = "The version of the infrastructure as it is being generated."
+    type = string
 }
 
 #
@@ -38,13 +40,13 @@ variable "meta_version" {
 #
 
 variable "subscription_production" {
-  description = "The subscription ID of the production subscription. Used to find the log analytics resources."
-  type = string
+    description = "The subscription ID of the production subscription. Used to find the log analytics resources."
+    type = string
 }
 
 variable "subscription_test" {
-  description = "The subscription ID of the test subscription."
-  type = string
+    description = "The subscription ID of the test subscription."
+    type = string
 }
 
 #
@@ -52,7 +54,7 @@ variable "subscription_test" {
 #
 
 variable "tags" {
-  description = "Tags to apply to all resources created."
-  type = map(string)
-  default = { }
+    description = "Tags to apply to all resources created."
+    type = map(string)
+    default = { }
 }
