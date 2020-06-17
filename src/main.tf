@@ -1,10 +1,5 @@
 terraform {
-  backend "remote" {
-    organization = "calvinverse"
-
-    workspaces {
-      prefix = "infrastructure-azure-core-network-networkwatcher-"
-    }
+  backend "local" {
   }
 }
 
