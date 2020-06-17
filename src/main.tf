@@ -3,7 +3,7 @@ terraform {
     organization = "calvinverse"
 
     workspaces {
-      prefix = "infrastructure-azure-core-network-networkwatcher"
+      prefix = "infrastructure-azure-core-network-networkwatcher-"
     }
   }
 }
