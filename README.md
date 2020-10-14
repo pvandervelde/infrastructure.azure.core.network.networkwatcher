@@ -3,7 +3,7 @@
 The `infrastructure.azure.core.network.networkwatcher` repository stores the resource configuration files for
 [Terraform](https://www.terraform.io/) to deploy a
 [resource group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#terminology)
-with and an [Azure Network Watcher](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview)
+with an [Azure Network Watcher](https://docs.microsoft.com/en-us/azure/network-watcher/network-watcher-monitoring-overview)
 to an Azure subscription so that it is possible to diagnose network issues
 in Azure.
 
@@ -22,7 +22,7 @@ By default the following tags are added:
 * **source** - The commit ID of the current commit
 * **version** - The version of the resources
 
-Additional Tags can be added by setting the `tags` variable as defined in the `variables.tf` file.
+Additional tags can be added by setting the `tags` variable as defined in the `variables.tf` file.
 
 ## Variables
 
